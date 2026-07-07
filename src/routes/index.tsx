@@ -75,8 +75,8 @@ function Hero() {
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display text-4xl font-bold leading-[1.05] text-white sm:text-5xl lg:text-7xl">
-            Maritime Solutions for{" "}
-            <span className="text-gradient-gold">Global Shipping</span> Excellence
+            Built on Trust. {" "}
+            <span className="text-gradient-gold">Driven by Maritime</span> Expertise
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -148,15 +148,17 @@ function AboutTeaser() {
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
           <div className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-royal">
-            <span className="h-px w-8 bg-gold" /> About Us
+            <span className="h-px w-8 bg-gold" /> About Us <span className="h-px w-8 bg-gold" />
           </div>
           <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
             About AKVN Trading <span className="text-royal">FZ-LLC</span>
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            A dynamic maritime firm delivering comprehensive, integrated solutions for the global
-            shipping industry. Founded by experienced maritime professionals and headquartered in
-            Dubai, UAE.
+            AKVN Trading FZ-LLC is a dynamic maritime firm dedicated to providing
+            comprehensive and integrated solutions for the shipping industry.
+            Founded by industry veterans with a deep and holistic understanding of marine operations,
+            we are committed to delivering exceptional service and tailored solutions to meet
+            the diverse needs of modern vessel owners and operators.
           </p>
           <Link to="/about"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-royal">
@@ -254,7 +256,7 @@ function WhyUs() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-            <span className="h-px w-8 bg-gold" /> Why Choose Us
+            <span className="h-px w-8 bg-gold" /> Why Choose Us <span className="h-px w-8 bg-gold" />
           </div>
           <h2 className="font-display text-3xl font-bold sm:text-4xl lg:text-5xl">
             Built on <span className="text-gradient-gold">Trust</span>, Delivered with Precision

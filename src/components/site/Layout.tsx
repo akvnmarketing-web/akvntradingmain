@@ -6,7 +6,7 @@ import {
   Facebook, Linkedin, Instagram, MessageCircle,
 } from "lucide-react";
 import { CONTACT, whatsappLink } from "@/lib/site-data";
-
+import logo from "@/assets/akvn-logo.png"
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
@@ -27,15 +27,18 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-navy-dark/95 backdrop-blur-xl shadow-lg py-3" : "bg-navy-dark/40 backdrop-blur-sm py-5"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "bg-navy-dark/95 backdrop-blur-xl shadow-lg py-3" : "bg-navy-dark/40 backdrop-blur-sm py-5"
+        }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3 text-white">
-          <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold to-gold-soft shadow-gold">
-            <Anchor className="h-5 w-5 text-navy" strokeWidth={2.5} />
-          </div>
+
+          <img
+            src={logo}
+            alt="AKVN Trading Logo"
+            className="h-15 w-15 object-contain rounded-xl"
+          />
+
           <div className="leading-tight">
             <div className="font-display text-lg font-bold tracking-tight">AKVN</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-gold">Trading FZ-LLC</div>
@@ -103,9 +106,12 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold to-gold-soft">
-              <Anchor className="h-5 w-5 text-navy" strokeWidth={2.5} />
-            </div>
+
+            <img
+              src={logo}
+              alt="AKVN Trading Logo"
+              className="h-15 w-15 object-contain rounded-xl"
+            />
             <div>
               <div className="font-display text-lg font-bold text-white">AKVN</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-gold">Trading FZ-LLC</div>
@@ -115,21 +121,7 @@ export function Footer() {
             AKVN Trading FZ-LLC delivers integrated maritime services, engineering solutions and
             marine equipment for global shipping operations.
           </p>
-          <div className="mt-5 flex gap-3">
-            <a href={whatsappLink("Hello AKVN, I'd like to know more about your services.")} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
-              className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
-              <MessageCircle className="h-4 w-4" />
-            </a>
-            {[Facebook, Linkedin, Instagram].map((Ic, i) => (
-              <a key={i} href="#" aria-label="Social" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
-                <Ic className="h-4 w-4" />
-              </a>
-            ))}
-            <a href={`mailto:${CONTACT.email}`} aria-label="Email"
-              className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
-              <Mail className="h-4 w-4" />
-            </a>
-          </div>
+
         </div>
 
         <div>
@@ -144,7 +136,7 @@ export function Footer() {
         <div>
           <h4 className="font-display text-sm font-semibold uppercase tracking-widest text-gold">Services</h4>
           <ul className="mt-5 space-y-2.5 text-sm">
-            {["Ship Management","Marine Survey","Dry Dock","Marine Consultancy","Ship Supplies"].map((s) => (
+            {["Ship Management", "Marine Survey", "Dry Dock", "Marine Consultancy"].map((s) => (
               <li key={s}><Link to="/services" className="transition-colors hover:text-gold">{s}</Link></li>
             ))}
           </ul>
@@ -157,7 +149,23 @@ export function Footer() {
             <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-gold" /> <a href={CONTACT.phoneHref} className="hover:text-gold">{CONTACT.phone}</a></li>
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-gold" /> {CONTACT.location}</li>
           </ul>
+          <div className="mt-5 flex gap-3">
+            <a href={whatsappLink("Hello AKVN, I'd like to know more about your services.")} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+              className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
+              <MessageCircle className="h-4 w-4" />
+            </a>
+            {/* {[Facebook, Linkedin, Instagram].map((Ic, i) => (
+              <a key={i} href="#" aria-label="Social" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
+                <Ic className="h-4 w-4" />
+              </a>
+            ))} */}
+            <a href={`mailto:${CONTACT.email}`} aria-label="Email"
+              className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-navy">
+              <Mail className="h-4 w-4" />
+            </a>
+          </div>
         </div>
+
       </div>
 
       <div className="mx-auto mt-14 max-w-7xl border-t border-white/10 px-6 pt-6 text-center text-xs text-white/50">

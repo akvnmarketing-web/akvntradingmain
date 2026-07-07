@@ -50,10 +50,7 @@ function AboutPage() {
               About AKVN Trading <span className="text-royal">FZ-LLC</span>
             </h2>
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              AKVN Trading FZ-LLC is a dynamic maritime firm dedicated to providing comprehensive and
-              integrated solutions for the shipping industry. Founded by experienced maritime
-              professionals, we provide tailored services for ship owners, operators and marine
-              businesses across the UAE and international markets.
+              AKVN Trading FZ-LLC is a dynamic maritime firm dedicated to providing comprehensive and integrated solutions for the shipping industry. Founded by industry veterans with a deep and holistic understanding of marine operations, we are committed to delivering exceptional service and tailored solutions to meet the diverse needs of modern vessel owners and operators.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Based in Dubai, United Arab Emirates, we deliver excellence through operational expertise,
@@ -85,16 +82,13 @@ function AboutPage() {
           <div className="rounded-3xl bg-card p-10 shadow-sm">
             <h3 className="font-display text-2xl font-bold">Our Mission</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              To deliver reliable, integrated maritime solutions that safeguard our clients' assets,
-              elevate operational standards and support sustainable growth across the global shipping
-              industry.
+              To provide dependable and efficient maritime supply solutions through transparent processes, coordinated operations, and disciplined execution. We focus on delivering consistent service that supports safe, compliant, and uninterrupted vessel operations.
             </p>
           </div>
           <div className="rounded-3xl bg-gradient-to-br from-navy to-navy-dark p-10 text-white shadow-elegant">
             <h3 className="font-display text-2xl font-bold">Our Vision</h3>
             <p className="mt-4 text-white/80 leading-relaxed">
-              To become the region's most trusted maritime partner — recognised for excellence,
-              integrity and forward-looking solutions that redefine service standards at sea.
+              To become a trusted multi-regional supply partner for the shipping industry, recognized for reliability, integrity, and operational excellence. We aim to build long-term partnerships by aligning global standards with strong local execution.
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@ function ContactPage() {
                 <div className="mt-6 space-y-5">
                   <InfoRow icon={Mail} label="Email" value={CONTACT.email} href={`mailto:${CONTACT.email}`} />
                   <InfoRow icon={Phone} label="Phone" value={CONTACT.phone} href={CONTACT.phoneHref} />
-                  <InfoRow icon={MessageCircle} label="WhatsApp" value={CONTACT.phone} href={whatsappLink("Hello AKVN, I'd like to enquire about your services.")} />
+                  {/* <InfoRow icon={MessageCircle} label="WhatsApp" value={CONTACT.phone} href={whatsappLink("Hello AKVN, I'd like to enquire about your services.")} /> */}
                   <InfoRow icon={MapPin} label="Location" value={CONTACT.location} />
                   <InfoRow icon={Clock} label="Business Hours" value={CONTACT.hours} />
                 </div>
